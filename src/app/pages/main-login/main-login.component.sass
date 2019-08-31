@@ -1,0 +1,509 @@
+.oneline
+  display: inline-block
+
+.main
+
+
+@-webkit-keyframes mover
+  0% 
+    transform: translateY(0)
+  100%
+    transform: translateY(-20px)
+
+@keyframes mover
+  0% 
+    transform: translateY(0)
+  100% 
+    transform: translateY(-20px)
+
+.bubble1
+  -webkit-animation: mover1 10s infinite  alternate
+  animation: mover1 10s infinite  alternate
+
+@-webkit-keyframes mover1
+  0% 
+    transform: translateY(0)
+  100% 
+    transform: translateY(-300px)  
+
+@keyframes mover1
+  0% 
+    transform: translateY(0)  
+  100% 
+    transform: translateY(-300px) 
+
+.bubble2
+  -webkit-animation: mover2 5s infinite  alternate  
+  animation: mover2 5s infinite  alternate  
+
+@-webkit-keyframes mover2
+  0% 
+    transform: translateY(0)  
+  100% 
+    transform: translateY(-100px)  
+
+@keyframes mover2
+  0% 
+    transform: translateY(0)  
+  100% 
+    transform: translateY(-100px)  
+
+.bubble3
+  -webkit-animation: mover3 2s infinite  alternate  
+  animation: mover3 2s infinite  alternate  
+
+@-webkit-keyframes mover3
+  0% 
+    transform: translateY(0)   
+  100% 
+    transform: translateY(-80px)  
+
+@keyframes mover3
+  0% 
+    transform: translateY(0)  
+  100% 
+    transform: translateY(-80px)  
+
+.bubble4
+  -webkit-animation: mover4 3s infinite  alternate  
+  animation: mover4 3s infinite  alternate  
+
+@-webkit-keyframes mover4
+  0%  
+    transform: translateY(0)   
+  100% 
+    transform: translateY(-120px)   
+
+@keyframes mover3
+  0% 
+    transform: translateY(0)  
+  100% 
+    transform: translateY(-120px)  
+
+.line1
+  -webkit-animation: mover5 4s infinite  alternate  
+  animation: mover5 4s infinite  alternate  
+
+@-webkit-keyframes mover5
+  0% 
+     transform: translateX(0)  
+  100% 
+     transform: translateX(-80px)   
+
+@keyframes mover5
+  0%  
+    transform: translateX(0) 
+  100% 
+    ransform: translateX(-80px) 
+
+.line2
+  -webkit-animation: mover6 4s infinite  alternate  
+  animation: mover6 4s infinite  alternate  
+
+@-webkit-keyframes mover6
+  0% 
+    transform: translateX(0)
+  100% 
+    transform: translateX(-180px)
+
+@keyframes mover6
+  0% 
+    transform: translateX(0)
+  100% 
+    transform: translateX(-180px)
+
+
+.inner
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+
+
+.ul
+  margin: 0%
+
+ul, li
+  margin: 0%
+  padding: 0
+  top: 0
+  list-style: none
+  display: inline-block
+
+.abgne_tab
+  float: right
+  clear: left
+  margin: 20px 0
+  padding: 10%
+  position: relative
+  z-index: 1
+
+@media (max-width: 768px)
+  .abgne_tab
+    float: none
+    text-align: center
+
+@media (max-width: 425px)
+  .abgne_tab
+    float: none
+    text-align: center
+    position: relative
+
+.btn
+  font-display: inline-blocks
+  vertical-align: top
+  position: relative
+  margin: 0px
+  height: 44px
+  line-height: 36px
+  padding: 0 16px
+  min-width: 64px
+  box-sizing: border-box
+  font-size: 14px
+  text-align: center
+  font-weight: 500
+  font-family: 'Courier New', Courier, monospace
+  letter-spacing: 0px
+  text-decoration: none
+  background-color: #F0592A
+  border: 0
+  border-radius: 9px
+  outline: 0
+  cursor: pointer
+  overflow: hidden
+  user-select: none
+  transition: all 0.3s
+
+.btn--primary
+  background-image: url("../../../img/icon.png")
+  color: #ffffff
+  background-repeat: no-repeat
+
+.btn
+  .btn--primary
+    background-color: #F0592A
+    &:hover, &:active
+      background-color: #ffffff
+  &.btn--lg
+    font-size: 14px
+    line-height: 56px
+    height: 56px
+    font-weight: 400px
+    border-radius: 9px
+    padding: 10px 30px
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+
+@media (max-width: 425px)
+  .btn.btn--lg
+    padding: 10px 20px
+
+@media (max-width: 320px)
+  .btn.btn--lg
+    min-width: 25%
+    font-size: 8px
+    margin: 0px
+    height: 24px
+    line-height: 18px
+    padding: 5px 10px
+
+ul.tabs
+  width: 49px
+  height: 84px
+  border-bottom: none
+  position: relative
+  margin: 0%
+
+@media (max-width: 425px)
+  ul.tabs
+    top: 0
+    width: 39px
+    height: 84px
+    margin: 0px
+
+input
+  padding: 5px 15px
+  background: #F0592A
+  border: 0 none
+  cursor: pointer
+  -webkit-border-radius: 5px
+  border-radius: 5px
+  line-height: 15px
+  color: #ffffff
+  margin: 10px 0px
+
+.group
+  clear: left
+  width: 40%
+  margin: 2% 0
+  padding: 100px 0px 10% 10%
+  position: relative
+  z-index: 1
+
+@media (max-width: 768px)
+  .group
+    display: none
+
+ul
+  li
+    height: 85px
+    line-height: 20px
+    overflow: hidden
+    position: relative
+    margin: 0
+    border: none
+    border-left: none
+    background: #ffffff
+    box-shadow: 2px 0px 3px rgba(34, 34, 54, 0.3)
+    font-family: "Microsoft JhengHei", Helvetica, Arial, serif
+    font-size: 16px
+    display: inline-block
+  &.tabs li
+    a
+      display: block
+      padding: 0 20px
+      color: #000000
+      border: 1px solid #fff
+      text-decoration: none
+      &:hover
+        background: #F0592A
+        color: #ffffff
+    &.active
+      background: #fff
+      border-bottom: 1px solid #fff
+      a:hover
+        background: #fff
+
+@media (max-width: 425px)
+  ul li
+    height: 65px
+    line-height: 15px
+    font-size: 14px
+
+@media (max-width: 320px)
+  ul li
+    font-size: 10px
+
+@media (max-width: 425px)
+  ul.tabs li a
+    padding: 0 10px
+
+div.tab_container
+  clear: left
+  border: none
+  border-top: none
+  background: #fff
+  box-shadow: 2px 4px 9px rgba(10%, 10%, 20%, 0.3)
+  font-family: "Microsoft JhengHei", Helvetica, Arial, serif
+  font-size: 18px
+  letter-spacing: 5px
+  line-height: 28px
+  color: #404040
+  display: inline-block
+  .tab_content
+    padding: 30px
+    display: inline-block
+    h2
+      margin: 0 0 20px
+
+@media (max-width: 425px)
+  div.tab_container
+    border-top: none
+    margin: 0
+    font-size: 14px
+    line-height: 20px
+    letter-spacing: 3px
+
+@media (max-width: 320px)
+  div.tab_container
+    font-size: 10px
+    line-height: 16px
+    letter-spacing: 3px
+
+@media (max-width: 425px)
+  div.tab_container .tab_content
+    padding: 20px
+    line-height: 20px
+
+@media (max-width: 375px)
+  div.tab_container .tab_content
+    padding: 20px
+    line-height: 20px
+
+.path8
+  background-color: rgba(255, 255, 255, 0)
+  top: 65%
+  height: 5px
+  width: 336px
+  position: absolute
+  margin: 0
+  left: 48%
+  -ms-transform: rotate(0deg)
+  -webkit-transform: rotate(0deg)
+  transform: rotate(0deg)
+
+.path8copy3
+  background-color: rgba(255, 255, 255, 0)
+  top: 70%
+  height: 4px
+  width: 119px
+  position: absolute
+  margin: 0
+  left: 93%
+  -ms-transform: rotate(0deg)
+  -webkit-transform: rotate(0deg)
+  transform: rotate(0deg)
+
+.path8copy3-1
+  background-color: rgba(255, 255, 255, 0)
+  top: 60%
+  height: 4px
+  width: 119px
+  position: absolute
+  margin: 0
+  left: 95%
+  -ms-transform: rotate(0deg)
+  -webkit-transform: rotate(0deg)
+  transform: rotate(0deg)
+
+.path8copy4
+  background-color: rgba(255, 255, 255, 0)
+  top: 80%
+  height: 4px
+  width: 119px
+  position: absolute
+  margin: 0
+  left: 93%
+  -ms-transform: rotate(0deg)
+  -webkit-transform: rotate(0deg)
+  transform: rotate(0deg)
+
+.path8copy
+  background-color: rgba(255, 255, 255, 0)
+  top: 85%
+  height: 4px
+  width: 258px
+  position: absolute
+  margin: 0
+  left: 35%
+  -ms-transform: rotate(0deg)
+  -webkit-transform: rotate(0deg)
+  transform: rotate(0deg)
+
+.path8copy4
+  background-color: rgba(255, 255, 255, 0)
+  top: 80%
+  height: 4px
+  width: 258px
+  position: absolute
+  margin: 0
+  left: 28%
+  -ms-transform: rotate(0deg)
+  -webkit-transform: rotate(0deg)
+  transform: rotate(0deg)
+
+.oval
+  background-color: rgba(255, 255, 255, 0)
+  top: 60%
+  height: 54px
+  width: 54px
+  position: absolute
+  margin: 0
+  left: 1%
+  -ms-transform: rotate(0deg)
+  -webkit-transform: rotate(0deg)
+  transform: rotate(0deg)
+
+.oval2
+  background-color: rgba(255, 255, 255, 0)
+  top: 18%
+  height: 30px
+  width: 30px
+  position: absolute
+  margin: 0
+  left: 45%
+  -ms-transform: rotate(0deg)
+  -webkit-transform: rotate(0deg)
+  transform: rotate(0deg)
+
+.oval4
+  background-color: rgba(255, 255, 255, 0)
+  top: 15%
+  height: 14px
+  width: 14px
+  position: absolute
+  margin: 0
+  left: 10%
+  -ms-transform: rotate(0deg)
+  -webkit-transform: rotate(0deg)
+  transform: rotate(0deg)
+
+.oval4-1
+  background-color: rgba(255, 255, 255, 0)
+  top: 45%
+  height: 14px
+  width: 14px
+  position: absolute
+  margin: 0
+  left: 55%
+  -ms-transform: rotate(0deg)
+  -webkit-transform: rotate(0deg)
+  transform: rotate(0deg)
+
+.oval4-2
+  background-color: rgba(255, 255, 255, 0)
+  top: 8%
+  height: 14px
+  width: 14px
+  position: absolute
+  margin: 0
+  left: 85%
+  -ms-transform: rotate(0deg)
+  -webkit-transform: rotate(0deg)
+  transform: rotate(0deg)
+  background-color: rgba(255, 255, 255, 0)
+  top: 8%
+  height: 14px
+  width: 14px
+  position: absolute
+  margin: 0
+  left: 85%
+  -ms-transform: rotate(0deg)
+  -webkit-transform: rotate(0deg)
+  transform: rotate(0deg)
+
+.oval4-3
+  background-color: rgba(255, 255, 255, 0)
+  top: 85%
+  height: 16px
+  width: 16px
+  position: absolute
+  margin: 0
+  left: 90%
+  -ms-transform: rotate(0deg)
+  -webkit-transform: rotate(0deg)
+  transform: rotate(0deg)
+
+.oval5
+  background-color: rgba(255, 255, 255, 0)
+  top: 80%
+  height: 14px
+  width: 14px
+  position: absolute
+  margin: 0
+  left: 95%
+  -ms-transform: rotate(0deg)
+  -webkit-transform: rotate(0deg)
+  transform: rotate(0deg)
+
+.oval5-1
+  background-color: rgba(255, 255, 255, 0)
+  top: 10%
+  height: 14px
+  width: 14px
+  position: absolute
+  margin: 0
+  left: 80%
+  -ms-transform: rotate(0deg)
+  -webkit-transform: rotate(0deg)
+  transform: rotate(0deg)
