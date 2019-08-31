@@ -1,0 +1,70 @@
+<!-- <input type="text" [(ngModel)]="account">
+<button (click)="login()">login</button>
+<p>yauhy@ntub.edu.tw</p>
+<p>N1074430@ntub.edu.tw</p>
+<p>N1061402@ntub.edu.tw</p>
+<p>10741025@ntub.edu.tw</p>
+<p>WW@dfdfs</p>
+<hr>
+<p>10633014@ntub.edu.tw</p>
+<p>10743061@ntub.edu.tw</p>
+<hr>
+<p>jy58@ntub.edu.tw</p>
+<p>10642036@ntub.edu.tw</p>
+<p>10742001@ntub.edu.tw</p>
+
+
+<input type="text" [(ngModel)]="account2">
+<input type="text" [(ngModel)]="password">
+<button (click)="supervisorLogin()">login</button>
+<button (click)="forgetPassword()">忘記密碼</button> -->
+
+<div class="inner">
+    <img src="img/group.png" class="group main" src="./img/group.png">
+    <div class="abgne_tab">
+  
+      <div class="tab_container oneline">
+        <div id="tab1" class="tab_content" *ngIf="isSchool">
+          <h2>國立<br>台北商業大學</h2>
+          <h2>服務學習系統</h2>
+          <a class="btn btn--primary btn--lg" >Sign in with Google</a>
+  
+        </div>
+        <div id="tab2" class="tab_content" *ngIf="!isSchool">
+          <h2>國立<br>台北商業大學</h2>
+          <h2>服務學習系統</h2>
+          <li><input type="text" placeholder="請輸入帳號" [(ngModel)]="account2"></li>
+          <li><input type="password" placeholder="請輸入密碼" [(ngModel)]="password"></li>
+          <li>
+            <input class="oneline" type="button" value="登入">
+            <input style="margin-left: 3px" class="oneline" type="button" value="忘記密碼">
+          </li>
+        </div> 　　　　　 　 　
+      </div>
+      <div class="tab-side oneline">
+        <ul class="tabs">
+          <li><a (click)="toSchool()">校內人士</a></li>
+          <li><a (click)="notSchool()">校外人士</a></li>
+        </ul>
+      </div>
+  
+    </div>
+    <img src="./img/line1.png" class="path8 line1" src="./img/line1.png" />
+    <img src="./img/line2.png" class="path8copy3 line2" src="./img/line2.png" />
+    <img src="./img/line2.png" class="path8copy3-1 line1" src="./img/line2.png" />
+    <img src="./img/line3.png" class="path8copy4 line2" src="./img/line3.png" />
+    <img src="./img/line4.png" class="path8copy" src="./img/line4.png" />
+    <img src="./img/circle1.png" class="oval bubble1" src="./img/circle1.png" />
+    <img src="./img/circle2.png" class="oval2 bubble2" src="./img/circle2.png" />
+    <img src="./img/circle4.png" class="oval4 bubble3" src="./img/circle4.png" />
+    <img src="./img/circle4.png" class="oval4-1 bubble4" src="./img/circle4.png" />
+    <img src="./img/circle4.png" class="oval4-2 bubble1" src="./img/circle4.png" />
+    <img src="./img/circle4.png" class="oval4-3 bubble2" src="./img/circle4.png" />
+    <img src="./img/circle5.png" class="oval5 bubble3" src="./img/circle5.png" />
+    <img src="./img/circle5.png" class="oval5-1 bubble4" src="./img/circle5.png" />
+  
+  
+  
+  
+  </div>
+  
